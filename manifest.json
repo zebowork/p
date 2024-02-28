@@ -1,13 +1,15 @@
 {
   "short_name": "Zebo",
   "name": "Zebo - connecting you with your laundry",
-  "description": "Zebo help you to connect you with your lanundry. Use it to place your job to your favouit lanudry in your area. You can check prices of your basket and go to laundry which you like most",
-  "categories": ["laundry", "wash", "dryclean", "steampress"],
+  "description": "Zebo help you to connect you with your laundry. Use it to place your job to your favorite laundry in your area. You can check prices of your basket and go to laundry which you like most",
+  "categories": [
+    "lifestyle"
+  ],
   "lang": "en",
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#6D71EF",
-  "orientation" : "portrait",
+  "orientation": "portrait",
   "background_color": "#6d71ef",
   "icons": [
     {
@@ -62,7 +64,13 @@
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
-    },    
+    },
+    {
+      "src": "icons/icon512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
     {
       "src": "icons/icon1024.png",
       "sizes": "1024x1024",
@@ -70,7 +78,7 @@
       "purpose": "maskable"
     }
   ],
-  "screenshots":[
+  "screenshots": [
     {
       "src": "https://zebo.work/img/home.png",
       "sizes": "1600x2880",
@@ -102,33 +110,62 @@
       "type": "image/png"
     }
   ],
-  "features":[
+  "features": [
     "Multiple items",
     "Support images",
     "Check prices",
-    "History & Contact"
+    "History &amp; Contact"
   ],
-  "shortcuts" : [
+  "shortcuts": [
     {
       "name": "Laundry Basket",
       "short_name": "Laundry",
       "description": "Start putting your laundry into basket",
       "url": "/job",
-      "icons": [{ "src": "/icons/washing-machine.png", "sizes": "1000x1000" }]
+      "icons": [
+        {
+          "src": "/icons/washing-machine.png",
+          "sizes": "1000x1000"
+        }
+      ]
     },
     {
       "name": "Laundry History",
       "short_name": "History",
       "description": "View the list of your past laundries",
       "url": "/jobHistory",
-      "icons": [{ "src": "/icons/history.png", "sizes": "1000x1000" }]
+      "icons": [
+        {
+          "src": "/icons/history.png",
+          "sizes": "1000x1000"
+        }
+      ]
     },
     {
       "name": "Contact US",
       "short_name": "Contact",
       "description": "You can contact us from this page",
       "url": "/contact",
-      "icons": [{ "src": "/icons/headphone-alt.png", "sizes": "1000x1000" }]
+      "icons": [
+        {
+          "src": "/icons/headphone-alt.png",
+          "sizes": "1000x1000"
+        }
+      ]
     }
-  ]
+  ],
+  "id": "zebo",
+  "dir": "auto",
+  "scope": "https://zebo.app/",
+  "display_override": [
+    "standalone",
+    "window-controls-overlay",
+    "minimal-ui",
+    "fullscreen",
+    "browser"
+  ],
+  "prefer_related_applications": false,
+  "edge_side_panel": {
+    "preferred_width": 376
+  }
 }
